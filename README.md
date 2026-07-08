@@ -115,11 +115,6 @@ To avoid ongoing GCP charges, destroy all resources when you're done:
 terraform destroy
 ```
 
-## Documentation
-
-- [`LEARNINGS.md`](LEARNINGS.md) — what I learned, decisions made along the way, and screenshots of the deployed resources.
-- [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) — issues I ran into and how I fixed them.
-
 ## Notes
 
 - The service account follows least-privilege: it only has `storage.objectViewer` on the specific bucket created here, not project-wide access.
