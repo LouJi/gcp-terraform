@@ -1,4 +1,4 @@
-# Terraform GCP Web App Infrastructure
+no# Terraform GCP Web App Infrastructure
 
 A practice project for learning Terraform by provisioning a small, self-contained web app stack on Google Cloud Platform (GCP).
 
@@ -120,4 +120,4 @@ terraform destroy
 - The service account follows least-privilege: it only has `storage.objectViewer` on the specific bucket created here, not project-wide access.
 - The GCS bucket has `prevent_destroy = false`, so `terraform destroy` will remove it along with everything else.
 - `project_id` has no default and **must** be supplied via `terraform.tfvars` — Terraform will prompt for it interactively if the file is missing.
-- The useage of dot notation like 'google_storage_bucket.app_storage.name' and 'google_compute_forwarding_rule.lb_frontend.ip_address' to reference resource even if there are not yet created.
+- The useage of dot notation like 'google_storage_bucket.app_storage.name' and 'google_compute_forwarding_rule.lb_frontend.ip_address' to reference resources,even if they are not yet created.
